@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verifikasi Tanda Tangan Digital (MD5 & DSA)</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Verifikasi Tanda Tangan Digital</h1>
+      <div class="card">
+        <textarea
+          id="verifyMessage"
+          placeholder="Masukkan pesan asli..."
+          rows="5"
+        ></textarea>
+        <textarea
+          id="verifySignature"
+          placeholder="Masukkan signature..."
+          rows="4"
+        ></textarea>
+        <button class="btn primary" onclick="verifySignature()">
+          Verifikasi Tanda Tangan
+        </button>
+      </div>
+      <h4 id="verificationResult"></h4>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Digital Signature - Kelompok 6</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
